@@ -68,11 +68,6 @@ spark.sql("""
         order by cnt desc
 """).show()
 
-print("Print SEMI Customers from Orders")
-spark.sql("""
-        select * from customers 
-        semi join orders on customers.customer_id = orders.customer_id
- """).show(20)
 
 
 print("end of main")
