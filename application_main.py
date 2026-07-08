@@ -67,7 +67,4 @@ spark.sql("""
         having cnt > 250
         order by cnt desc
 """).show()
-
-
-
 print("end of main")
